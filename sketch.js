@@ -39,14 +39,20 @@ function draw(){
   padDown.position.x = mouseX;
   padDown2.position.x = mouseX
   // for ai
-  padUp.position.x = ball.x;
-  padUp2.position.x = ball.x;
+  // padUp.position.x = ball.x;
+  // padUp2.position.x = ball.x;
+
   
   ball.bounceOff(WallRight);
   ball.bounceOff(WallLeft); 
   ball.bounceOff(padDown);
   ball.bounceOff(padUp);
    
+  //Fro Ai
+  padUp.position.x = ball.x;
+  console.log("True");
+  padUp2.position.x = ball.x;
+
   if(ball.y>545){
   padDown.visible=false;
   padDown2.visible=false;
@@ -74,3 +80,5 @@ function reset() {
     gameRestart.visible =false; 
   }
 }
+
+//By:HarshitPathak
