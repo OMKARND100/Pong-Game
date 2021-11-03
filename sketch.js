@@ -23,6 +23,9 @@ function setup(){
   ball.velocityX = 4;
   ball.velocityY = 4;
 
+  //chenged
+  if game :
+    out.loc -22,
       //  for gameover obj
       gameOver = createSprite(210, 250);
       gameOver.addImage(gameOverimg);
